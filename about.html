@@ -41,9 +41,13 @@
     // 출력 결과: 33%    
     $(document).ready(function () {
         
-        setTimeout(function() {
+        setTimeout(function() { debugger;
             $('#start').trigger('click'); 
             }, 200);
+
+        setTimeout(function() { 
+
+        
         var x = [ , , , , , , ]; //1일 승연사원 처리건수
         var y = [ , , , , , , ]; //1일 총 처리건수    
         var result = [ , , , , , , ]; //승연사원 1일 퍼센트
@@ -59,23 +63,18 @@
         result[i] = x[i] / y[i] * 100;
         result[i] = Math.ceil(result[i]);
         kim[i] = ($('#sykim'+i).text()) * 1;
-        
+        $('#percent'+i).text(result[i]+'%');
         xtotal = xtotal + x[i];
         ytotal = ytotal + y[i];
         kimtotal = kimtotal + kim[i];
         result[6] = xtotal/ytotal * 100;
         result[6] = Math.ceil(result[6]);
-
-        setTimeout(function() {
-            
-        $('#percent'+i).text(result[i]+'%');
         $('#sylee6').text(xtotal);
         $('#total6').text(ytotal);
         $('#sykim6').text(kimtotal);
         $('#percent6').text(result[6]+'%');
-        }, 1000);
-    }   
-
+        }  
+    }, 1500);
     });
     
     </script>
@@ -345,7 +344,7 @@
                                         <div class="col-md-3 col-sm-6 bordered-right">
                                             <div class="counter-box">
                                                 <i class="flaticon-people"></i>
-                                                <h1 class="counter" id="sykim5">1</h1>
+                                                <h1 class="counter" id="sykim5">6</h1>
                                                 <p>김상엽 사원 처리건</p>
                                             </div>
                                         </div>
