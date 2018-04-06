@@ -36,12 +36,16 @@
     <!--[if lt IE 9]><script type="text/javascript" src="js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script type="text/javascript" src="js/ie-emulation-modes-warning.js"></script>
     <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
     <script type="text/javascript">
     
     // 출력 결과: 33%    
     $(document).ready(function () {
         
-        setTimeout(function() { debugger;
+        setTimeout(function() { 
             $('#start').trigger('click'); 
             }, 1000);
 
@@ -74,9 +78,53 @@
         $('#sykim6').text(kimtotal);
         $('#percent6').text(result[6]+'%');
         }  
-    }, 1500);
+    }, 2000);
     });
-    
+
+
+   	function drawMorrisChart() {
+
+    new Morris.Line({
+
+        // ID of the element in which to draw the chart.
+
+        element: 'morrisChart',
+
+        // Chart data records -- each entry in this array corresponds to a point on
+
+        // the chart.
+
+        data: [
+
+            { year: '2018-03-19', value: $('#sylee1').text() },
+
+            { year: '2018-03-20', value: $('#sylee2').text() },
+
+            { year: '2018-03-21', value: $('#sylee3').text() },
+
+            { year: '2018-03-22', value: $('#sylee4').text() },
+
+            { year: '2018-03-23', value: $('#sylee5').text() }
+
+        ],
+
+        // The name of the data record attribute that contains x-values.
+
+        xkey: 'year',
+
+        // A list of names of data record attributes that contain y-values.
+
+        ykeys: ['value'],
+
+        // Labels for the ykeys -- will be displayed when you hover over the
+
+        // chart.
+
+        labels: ['Value']
+
+        });
+
+    }
     </script>
 
 </head>
@@ -106,18 +154,30 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="navbar-collapse collapse" role="navigation" aria-expanded="true" id="app-navigation">
                 <ul class="nav navbar-nav">
-                        <li class="dropdown active" style="width:800px;">
-                            <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
-                                3월달 내역<span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">1주차</a></li>
-                                <li><a href="#">2주차</a></li>
-                                <li><a href="#">3주차</a></li>
-                                <li><a href="about.html">4주차</a></li>
-                                <li><a href="about5.html">5주차</a></li>
-                            </ul>
-                        </li>
+                    <li class="dropdown active" style="width:400px;">
+                        <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
+                            3월달 내역<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">1주차</a></li>
+                            <li><a href="#">2주차</a></li>
+                            <li><a href="#">3주차</a></li>
+                            <li><a href="about.html">4주차</a></li>
+                            <li><a href="about3-5.html">5주차</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active" style="width:400px;">
+                        <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
+                            4월달 내역<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about4-1.html">1주차</a></li>
+                            <li><a href="#">2주차</a></li>
+                            <li><a href="#">3주차</a></li>
+                            <li><a href="#">4주차</a></li>
+                            <li><a href="#">5주차</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right rightside-navbar">
                     <li>
@@ -417,61 +477,17 @@
 
 <div class="clearfix"></div>
 
+<!-- rapahel JS-->
+<div class="container">
 
 
-<!-- Partners block start -->
-<div class="partners-block">
-    <div class="container">
-        <h3>Brands & Partners</h3>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="carousel our-partners slide" id="ourPartners">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <a href="#">
-                                    <img src="http://placehold.it/222x82" alt="audiojungle">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <a href="#">
-                                    <img src="http://placehold.it/222x82" alt="themeforest">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <a href="#">
-                                    <img src="http://placehold.it/222x82" alt="tuts">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <a href="#">
-                                    <img src="http://placehold.it/222x82" alt="graphicriver">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                <a href="#">
-                                    <img src="http://placehold.it/222x82" alt="codecanyon">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="left carousel-control" href="#ourPartners" data-slide="prev"><i class="fa fa-chevron-left icon-prev"></i></a>
-                    <a class="right carousel-control" href="#ourPartners" data-slide="next"><i class="fa fa-chevron-right icon-next"></i></a>
-                </div>
-            </div>
-        </div>
+    <div class="col-lg-12">
+                <button type="button" class="btn btn-primary" id="btnChartDraw" onclick="drawMorrisChart()">차트로 보기 버튼</button>
+
+                <div id="morrisChart" style="height: 300px; width: 800px;"></div>
     </div>
-</div>
-<!-- Partners block end -->
-
+            
+    
 
        
 
