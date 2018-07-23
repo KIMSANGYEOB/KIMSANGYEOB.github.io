@@ -8,9 +8,9 @@
     var raphael = {
 			draw : function() {
 				var that = this;
-				var R = Raphael('paper', 800, 700);
+				var R = Raphael('paper', 1280, 900);
 
-				R.canvas.style.zoom = 0.6;
+				R.canvas.style.zoom = 0.8;
 
 				var attr = {
 						fill: "#F0F0F0",
@@ -102,7 +102,8 @@
 								if (current === st.id) { 
 									return 
 								}
-								$("#mouseOnLocName").text(locInfo["loc" + st.id][0]);
+						    		alert($("#paper").children().find('path').attr('fill');
+								$("#mouseOnLocName").text($("#paper").children().find('path').attr('fill'));
 
 								if($(st.node).attr('fill') === '#3ec420') {
 									return;
@@ -115,24 +116,11 @@
 					    $("#mouseOnLocName").text(locInfo["loc" + st.id][0]);
 					    $("#paper").children().find('path').attr('fill', '#F0F0F0');
 					    $(st.node).attr('fill', '#3ec420');
-								$(st.node).attr('stroke', '#000000');
-
-					    that.top3(locInfo["loc" + st.id][0]);
+					   $(st.node).attr('stroke', '#000000');
 					}
 					})
 					(aus[state], state);
 				    }
-			},
-
-			loadingShow : function() {
-				$("#locationTop3").hide();
-				$("#iconSet").show();
-
-				setTimeout(function() {
-					$("#iconSet").hide();
-					$("#locationTop3").fadeIn('slow'); 
-
-				}, 1000);
 			}
 	};
 
@@ -143,10 +131,10 @@
 </script>
     </head>
     <body>
-        <div class="main-title">
-            <h4><span id="mouseOnLocName">성동구</span></h4>
+        <div class="main-title" style="text-align: center; margin-bottom: 20px;">
+            <h2><span id="mouseOnLocName">성동구</span></h2>
         </div>
-        <div class="mapArea">
+        <div class="mapArea" style="text-align: center;">
             <div id="paper"></div>
         </div>
     </body>
