@@ -8,9 +8,9 @@
     var raphael = {
 			draw : function() {
 				var that = this;
-				var R = Raphael('paper', 1280, 900);
+				var R = Raphael('paper', 1024, 1024);
 
-				R.canvas.style.zoom = 0.8;
+				R.canvas.style.zoom = 1;
 
 				var attr = {
 						fill: "#F0F0F0",
@@ -80,7 +80,7 @@
 						$(aus["vic"+(i+1)][0]).attr('fill','#3ec420');
 					}
 				}
-				var current = null;
+				var current = '성동구';
 
 				for (var state in aus) {
 					(function(st, state) {
@@ -102,8 +102,8 @@
 								if (current === st.id) { 
 									return 
 								}
-						    		alert($("#paper").children().find('path').attr('fill');
-								$("#mouseOnLocName").text($("#paper").children().find('path').attr('fill'));
+								
+								$("#mouseOnLocName").text(current);
 
 								if($(st.node).attr('fill') === '#3ec420') {
 									return;
@@ -114,6 +114,7 @@
 					};
 					st[0].onclick = function() {
 					    $("#mouseOnLocName").text(locInfo["loc" + st.id][0]);
+						current = $("#mouseOnLocName").text();
 					    $("#paper").children().find('path').attr('fill', '#F0F0F0');
 					    $(st.node).attr('fill', '#3ec420');
 					   $(st.node).attr('stroke', '#000000');
@@ -131,7 +132,7 @@
 </script>
     </head>
     <body>
-        <div class="main-title" style="text-align: center; margin-bottom: 20px;">
+        <div class="main-title" style="text-align: center; margin-bottom: 100px;">
             <h2><span id="mouseOnLocName">성동구</span></h2>
         </div>
         <div class="mapArea" style="text-align: center;">
