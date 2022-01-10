@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>카테고리: network - 상엽 Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="상엽 Blog"><meta name="msapplication-TileImage" content="/img/iconmonstr-school-26.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="상엽 Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."><meta property="og:type" content="blog"><meta property="og:title" content="상엽 Blog"><meta property="og:url" content="http://kimsangyeob.github.io/"><meta property="og:site_name" content="상엽 Blog"><meta property="og:description" content="모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."><meta property="og:locale" content="ko_KR"><meta property="og:image" content="http://kimsangyeob.github.io/img/og_image.png"><meta property="article:author" content="KIM SANG YEOB"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://KIMSANGYEOB.github.io"},"headline":"상엽 Blog","image":["http://kimsangyeob.github.io/img/og_image.png"],"author":{"@type":"Person","name":"KIM SANG YEOB"},"publisher":{"@type":"Organization","name":"상엽 Blog","logo":{"@type":"ImageObject","url":"http://kimsangyeob.github.io/img/iconmonstr-school-26.svg"}},"description":"모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."}</script><link rel="icon" href="/img/iconmonstr-school-26.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/iconmonstr-school-26.svg" alt="상엽 Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">홈</a><a class="navbar-item" href="/archives">아카이브</a><a class="navbar-item" href="/categories">카테고리</a><a class="navbar-item" href="/tags">태그</a></div><div class="navbar-end"><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">카테고리</a></li><li class="is-active"><a href="#" aria-current="page">network</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-01-10T08:39:15.000Z" title="2022. 1. 10. 오후 5:39:15">2022-01-10</time>&nbsp;게시 됨</span><span class="level-item"><a class="link-muted" href="/categories/network/">network</a></span><span class="level-item">7분안에 읽기 (약 1088 단어)</span></div></div><h1 class="title is-1 is-size-4-mobile"><a class="link-muted" href="/2022/01/10/http-web-basic-2/">http-web-basic-2</a></h1><div class="content"><h1 id="인터넷-네트워크"><a href="#인터넷-네트워크" class="headerlink" title="인터넷 네트워크"></a>인터넷 네트워크</h1><ul>
+<li>TCP</li>
+<li>UDP</li>
+</ul>
+<h2 id="인터넷-프로토콜-스택의-4계층"><a href="#인터넷-프로토콜-스택의-4계층" class="headerlink" title="인터넷 프로토콜 스택의 4계층"></a>인터넷 프로토콜 스택의 4계층</h2><blockquote>
+<p>인터넷에서 컴퓨터들이 서로 정보를 주고받는 데 쓰이는 프로토콜의 모음</p>
+</blockquote>
+<ul>
+<li>어플리케이션 계층 : 프로세스간 통신을 담당. 예) HTTP, FTP, TLS/SSL</li>
+<li>전송 계층 : 송신자와 수신자를 연결하는 서비스에 대한 정보를 담당</li>
+<li>인터넷 계층 : 패킷을 목적지로 전송하기 위한 정보를 담당</li>
+<li>네트워크 인터페이스 계층 : LAN드라이버, LAN 장비등을 통해 물리적 전송을 담당</li>
+</ul>
+<p><img src="/images/http-web-basic/internet-protocol-4.png" alt="internet-protocol-4"></p>
+<h2 id="프로토콜-계층"><a href="#프로토콜-계층" class="headerlink" title="프로토콜 계층"></a>프로토콜 계층</h2><p><img src="/images/http-web-basic/protocol-layer.png" alt="Protocol Layer"></p>
+<h2 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h2><blockquote>
+<p>전송 제어 프로토콜(Transmission Control Protocol)</p>
+</blockquote>
+<ul>
+<li>연결지향 - TCP 3 way handshake (가상 연결) 데이터 전달 보증</li>
+<li>순서 보장</li>
+<li>신뢰할 수 있는 프로토콜 현재는 대부분 TCP 사용</li>
+</ul>
+<h3 id="TCP-3-way-handshake"><a href="#TCP-3-way-handshake" class="headerlink" title="TCP 3 way handshake"></a>TCP 3 way handshake</h3><p><img src="/images/http-web-basic/tcp-3-way-handshake.png" alt="Tcp 3 Way Handshake"></p>
+<h3 id="Data-Transfer"><a href="#Data-Transfer" class="headerlink" title="Data Transfer"></a>Data Transfer</h3><p><img src="/images/http-web-basic/tcp-1.png" alt="tcp-1"></p>
+<h3 id="Data-Order"><a href="#Data-Order" class="headerlink" title="Data Order"></a>Data Order</h3><p><img src="/images/http-web-basic/tcp-2.png" alt="tcp-2"></p>
+<h2 id="UDP"><a href="#UDP" class="headerlink" title="UDP"></a>UDP</h2><blockquote>
+<p>사용자 데이터그램 프로토콜(User Datagram Protocol)</p>
+</blockquote>
+<ul>
+<li>하얀 도화지에 비유(기능이 거의 없음)</li>
+<li>연결지향 - TCP 3 way handshake X</li>
+<li>데이터 전달 보증 X</li>
+<li>순서 보장 X</li>
+<li>데이터 전달 및 순서가 보장되지 않지만, 단순하고 빠름</li>
+</ul>
+<h3 id="HTTP-3"><a href="#HTTP-3" class="headerlink" title="HTTP/3"></a>HTTP/3</h3><blockquote>
+<p>퀵(QUIC; Quick UDP Internet Connection)로 UDP를 사용하여 인터넷 연결을 하는 프로토콜이다.</p>
+</blockquote>
+<p>HTTP(Hyper Text Transfer Protocol)의 3번째 프로토콜이다. HTTP는 클라이언트와 서버 사이에 이루어지는 요청/응답 프로토콜이다. 클라이언트인 웹 브라우저가 이 프로토콜을 통해 서버로부터 웹 페이지나 그림 정보를 요청하면, 서버는 이 요청에 응답하여 필요한 정보를 해당 사용자에게 전달하게 되고, 이 정보가 출력 장치를 통해 사용자에게 나타나는 것이다. HTTP/3은 처음에는 HTTP-over-QUIC 이라는 이름을 가지고 있었다. 즉, QUIC 프로토콜 위에서 돌아가는 HTTP이다.</p>
+<h2 id="TCP-vs-UDP"><a href="#TCP-vs-UDP" class="headerlink" title="TCP vs UDP"></a>TCP vs UDP</h2><ul>
+<li>TCP는 Connection 지향이며, UDP는 Connectionless 프로토콜이다.</li>
+<li>TCP는 전송 된 정보의 확인을 위해 유용한 데이터를 전송할 때 높은 신뢰성을 제공한다. 그리고 손실 패킷이있는 경우이를 다시 보낸다. UDP의 경우 패킷이 손실되면 재전송을 요구하지 않고 대상 컴퓨터가 손상된 데이터를 수신한다. 따라서 UDP는 신뢰할 수 없는 프로토콜이다.</li>
+<li>TCP는 데이터를 전송하기 전에 TCP가 연결을 설정하고 패킷의 적절한 전달을 보장하므로 UDP와 비교할 때 속도가 느리다. 반면에 UDP는 전송 된 데이터가 수신되었는지 여부를 확인하지 않는다.</li>
+<li>UDP의 헤더 크기는 8 바이트이며 TCP의 헤더 크기는 두 배 이상이다. TCP 헤더 크기는 20 바이트이므로 TCP 헤더에는 옵션, 채우기, 체크섬, 플래그, 데이터 오프셋, 확인 번호, 시퀀스 번호, 원본 및 대상 포트 등이 포함된다.</li>
+<li>TCP와 UDP는 모두 오류를 검사 할 수 있지만 TCP만이 정체와 흐름 제어를 모두 가지고 있으므로 오류를 수정할 수 있다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>비교</th>
+<th>TCP</th>
+<th>UDP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>의미</td>
+<td>TCP는 데이터를 전송하기 전에 컴퓨터간에 연결을 설정합니다.</td>
+<td>UDP는 시스템이 수신 준비가되었는지 여부를 확인하지 않고 대상 컴퓨터에 직접 데이터를 보냅니다.</td>
+</tr>
+<tr>
+<td>확장 대상</td>
+<td>전송 제어 프로토콜</td>
+<td>사용자 데이터 그램 프로토콜</td>
+</tr>
+<tr>
+<td>연결 타입</td>
+<td>연결 지향</td>
+<td>연결이 적음</td>
+</tr>
+<tr>
+<td>속도</td>
+<td>느린</td>
+<td>빠른</td>
+</tr>
+<tr>
+<td>신뢰할 수 있음</td>
+<td>높은 신뢰성</td>
+<td>신뢰할 수 없는</td>
+</tr>
+<tr>
+<td>헤더 크기</td>
+<td>20 바이트</td>
+<td>8 바이트</td>
+</tr>
+<tr>
+<td>승인</td>
+<td>사용자의 요청이있을 경우 데이터 확인 및 전송 재전송 기능이 있습니다.</td>
+<td>수신 확인도 걸리지도 않고 손실 된 데이터를 다시 전송하지도 않습니다.</td>
+</tr>
+</tbody></table>
+<h2 id="참고자료"><a href="#참고자료" class="headerlink" title="참고자료"></a>참고자료</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://ko.gadget-info.com/difference-between-tcp">gadget-info difference-between-tcp</a></li>
+<li>인프런 강의</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-08-15T08:05:15.000Z" title="2021. 8. 15. 오후 5:05:15">2021-08-15</time>&nbsp;게시 됨</span><span class="level-item"><a class="link-muted" href="/categories/network/">network</a></span><span class="level-item">4분안에 읽기 (약 649 단어)</span></div></div><h1 class="title is-1 is-size-4-mobile"><a class="link-muted" href="/2021/08/15/http-web-basic-1/">http-web-basic-1</a></h1><div class="content"><blockquote>
+<p>모든 개발자가 들어야하는 HTTP 기초 강의를 듣고 글을 작성</p>
+</blockquote>
+<h1 id="인터넷-네트워크"><a href="#인터넷-네트워크" class="headerlink" title="인터넷 네트워크"></a>인터넷 네트워크</h1><ul>
+<li>인터넷 통신</li>
+<li>IP(Internet Protocol)</li>
+<li>TCP, UDP</li>
+<li>PORT</li>
+<li>DNS</li>
+</ul>
+<h2 id="인터넷-통신"><a href="#인터넷-통신" class="headerlink" title="인터넷 통신"></a>인터넷 통신</h2><blockquote>
+<p>인터넷에서 컴퓨터 둘은 어떻게 통신할까?</p>
+</blockquote>
+<p><img src="/images/http-web-basic/internet_node.png" alt="Internet Node"></p>
+<p>인터넷 구성 및 작동에대한 것은 아래 링크에서 개념적으로 배울 수 있다.</p>
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/ko/docs/Learn/Common_questions/How_does_the_Internet_work">mozilla How Does Internet Work</a></p>
+<h3 id="노드"><a href="#노드" class="headerlink" title="노드"></a>노드</h3><p>컴퓨터 네트워크에 있어서 노드도 네트워크에 연결되어 있는 1개 1개의 기계를 의미한다. 구체적으로는 컴퓨터부터 시작해 네트워크를 교통 정리하는 루터나 허브, 네트워크 상에 다양한 서비스를 제공하고 있는 서버, 더욱이 네트워크에 연결되어 있는 프린터나 IP전화기등에 관해서도 노드라고 부를 수 있다. 그 외에 네트워크에 연결되어 있는 것이라면 스마트폰이나 타블렛PC등의 기기도 물론 노드라고 할 수 있다.</p>
+<p>한편 노드와 노드를 연결하고 있는 (케이블 등) 것은 ‘링크(link)’ 혹은 ‘엣지(edge)’라고 부른다. 링크와 노드, 엣지를 합쳐서 1개의 네트워크가 완성되는 것이다.</p>
+<p>※ 엣지는 링크 중에서도 다른 네트워크와의 경계선에 있는 부분, 혹은 단말의 가장 자리에 있는 부분을 의미한다.</p>
+<h2 id="IP-인터넷-프로토콜"><a href="#IP-인터넷-프로토콜" class="headerlink" title="IP(인터넷 프로토콜)"></a>IP(인터넷 프로토콜)</h2><ul>
+<li>지정한 IP 주소(IP Address)에 데이터 전달</li>
+<li>패킷(Packet)이라는 통신 단위로 데이터 전달</li>
+</ul>
+<p><img src="/images/http-web-basic/ip_address.png" alt="Ip Address"></p>
+<h3 id="IP-패킷-정보"><a href="#IP-패킷-정보" class="headerlink" title="IP 패킷 정보"></a>IP 패킷 정보</h3><p><img src="/images/http-web-basic/ip_packet.png" alt="Ip Packet"></p>
+<p>ip 패킷을 통해 데이터를 전달할 수 있다.</p>
+<ol>
+<li>클라이언트 패킷 전달</li>
+</ol>
+<ul>
+<li>출발지 100.100.100.1</li>
+<li>목적지 200.200.200.2</li>
+<li>내용 : Hello, World!</li>
+<li>…</li>
+</ul>
+<ol start="2">
+<li>서버 패킷 전달</li>
+</ol>
+<ul>
+<li>출발 200.200.200.2</li>
+<li>목적 100.100.100.1</li>
+<li>OK (Response)</li>
+<li>…</li>
+</ul>
+<h2 id="IP-프로토콜의-한계"><a href="#IP-프로토콜의-한계" class="headerlink" title="IP 프로토콜의 한계"></a>IP 프로토콜의 한계</h2><ul>
+<li>비연결성<ul>
+<li>패킷을 받을 대상이 없거나 서비스 불능 상태여도 패킷 전송</li>
+</ul>
+</li>
+<li>비신뢰성<ul>
+<li>중간에 패킷이 사라지면?</li>
+<li>패킷이 순서대로 안오면? 프로그램 구분</li>
+</ul>
+</li>
+<li>프로그램 구분<ul>
+<li>같은 IP를 사용하는 서버에서 통신하는 애플리케이션이 둘 이상이면?</li>
+</ul>
+</li>
+</ul>
+<h3 id="대상-서버-중단"><a href="#대상-서버-중단" class="headerlink" title="대상 서버 중단"></a>대상 서버 중단</h3><p><img src="/images/http-web-basic/ip_server_lost.png" alt="Ip Server Lost"></p>
+<h3 id="패킷-손실"><a href="#패킷-손실" class="headerlink" title="패킷 손실"></a>패킷 손실</h3><p><img src="/images/http-web-basic/ip_packet_lost.png" alt="Ip Packet Lost"></p>
+<h3 id="패킷-전달-순서"><a href="#패킷-전달-순서" class="headerlink" title="패킷 전달 순서"></a>패킷 전달 순서</h3><p><img src="/images/http-web-basic/ip_packet_order.png" alt="Ip Packet Order"></p>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="KIM SANG YEOB"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">KIM SANG YEOB</p><p class="is-size-6 is-block">환영합니다.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>서울</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">11</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">14</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/KIMSANGYEOB" target="_blank" rel="noopener">팔로우</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/KIMSANGYEOB"><i class="fab fa-github"></i></a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/blogs/"><span class="level-start"><span class="level-item">blogs</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/git/"><span class="level-start"><span class="level-item">git</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/infra/"><span class="level-start"><span class="level-item">infra</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/javascript/"><span class="level-start"><span class="level-item">javascript</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/network/"><span class="level-start"><span class="level-item">network</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/serverless/"><span class="level-start"><span class="level-item">serverless</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">아카이브</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2022/01/"><span class="level-start"><span class="level-item">1월 2022</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/12/"><span class="level-start"><span class="level-item">12월 2021</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/11/"><span class="level-start"><span class="level-item">11월 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">10월 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/09/"><span class="level-start"><span class="level-item">9월 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/08/"><span class="level-start"><span class="level-item">8월 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">태그</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/aws/"><span class="tag">aws</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/blog/"><span class="tag">blog</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/bundler/"><span class="tag">bundler</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/database/"><span class="tag">database</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/http/"><span class="tag">http</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/infra/"><span class="tag">infra</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/javascript/"><span class="tag">javascript</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/module/"><span class="tag">module</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/network/"><span class="tag">network</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/proxy/"><span class="tag">proxy</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/serverless/"><span class="tag">serverless</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/serverless-stack/"><span class="tag">serverless-stack</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/typescript/"><span class="tag">typescript</span><span class="tag">2</span></a></div></div></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-01-10T08:39:15.000Z">2022-01-10</time></p><p class="title"><a href="/2022/01/10/http-web-basic-2/">http-web-basic-2</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-12-27T14:15:02.000Z">2021-12-27</time></p><p class="title"><a href="/2021/12/27/micro-service/">micro-service</a></p><p class="categories"><a href="/categories/infra/">infra</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-12-21T14:10:32.000Z">2021-12-21</time></p><p class="title"><a href="/2021/12/21/module-bundler/">module-bundler</a></p><p class="categories"><a href="/categories/javascript/">javascript</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-12-13T14:49:16.000Z">2021-12-13</time></p><p class="title"><a href="/2021/12/13/js-proxy/">js-proxy</a></p><p class="categories"><a href="/categories/javascript/">javascript</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-29T13:48:31.000Z">2021-11-29</time></p><p class="title"><a href="/2021/11/29/serverless-data-1/">serverless-data-1</a></p><p class="categories"><a href="/categories/serverless/">serverless</a></p></div></article></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/iconmonstr-school-26.svg" alt="상엽 Blog" height="28"></a><p class="is-size-7"><span>&copy; 2022 KIM SANG YEOB</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "이 웹 사이트는 귀하의 경험을 향상시키기 위해 Cookie를 사용합니다.",
+          dismiss: "무시",
+          allow: "허용",
+          deny: "거부",
+          link: "더 알아보기",
+          policy: "Cookie 정책",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script></body></html>
