@@ -1,159 +1,100 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>상엽 Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="상엽 Blog"><meta name="msapplication-TileImage" content="/img/iconmonstr-school-26.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="상엽 Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."><meta property="og:type" content="blog"><meta property="og:title" content="상엽 Blog"><meta property="og:url" content="http://kimsangyeob.github.io/"><meta property="og:site_name" content="상엽 Blog"><meta property="og:description" content="모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."><meta property="og:locale" content="ko_KR"><meta property="og:image" content="http://kimsangyeob.github.io/img/og_image.png"><meta property="article:author" content="KIM SANG YEOB"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://KIMSANGYEOB.github.io"},"headline":"상엽 Blog","image":["http://kimsangyeob.github.io/img/og_image.png"],"author":{"@type":"Person","name":"KIM SANG YEOB"},"publisher":{"@type":"Organization","name":"상엽 Blog","logo":{"@type":"ImageObject","url":"http://kimsangyeob.github.io/img/iconmonstr-school-26.svg"}},"description":"모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."}</script><link rel="icon" href="/img/iconmonstr-school-26.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/iconmonstr-school-26.svg" alt="상엽 Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">홈</a><a class="navbar-item" href="/archives">아카이브</a><a class="navbar-item" href="/categories">카테고리</a><a class="navbar-item" href="/tags">태그</a></div><div class="navbar-end"><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-12-27T14:15:02.000Z" title="2021. 12. 27. 오후 11:15:02">2021-12-27</time>&nbsp;게시 됨</span><span class="level-item"><a class="link-muted" href="/categories/infra/">infra</a></span><span class="level-item">27분안에 읽기 (약 4073 단어)</span></div></div><h1 class="title is-1 is-size-4-mobile"><a class="link-muted" href="/2021/12/27/micro-service/">micro-service</a></h1><div class="content"><p>Micro Service</p>
-<p>마이크로서비스 아키텍처라고도 하는 마이크로서비스는 애플리케이션을 다음과 같은 서비스 모음으로 구성하는 아키텍처 스타일이라고 할 수 있다.</p>
-<p>그림예시)</p>
-<p><img src="/images/micro-service/microservice-architecture.png" alt="Microservice Architecture"></p>
-<ul>
-<li>높은 유지보수 및 테스트 가능</li>
-<li>느슨한 결합</li>
-<li>독립적으로 배포 가능</li>
-<li>비즈니스 역량을 중심으로 구성</li>
-<li>소규모 팀 소유</li>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>상엽 Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="상엽 Blog"><meta name="msapplication-TileImage" content="/img/iconmonstr-school-26.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="상엽 Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."><meta property="og:type" content="blog"><meta property="og:title" content="상엽 Blog"><meta property="og:url" content="http://kimsangyeob.github.io/"><meta property="og:site_name" content="상엽 Blog"><meta property="og:description" content="모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."><meta property="og:locale" content="ko_KR"><meta property="og:image" content="http://kimsangyeob.github.io/img/og_image.png"><meta property="article:author" content="KIM SANG YEOB"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://KIMSANGYEOB.github.io"},"headline":"상엽 Blog","image":["http://kimsangyeob.github.io/img/og_image.png"],"author":{"@type":"Person","name":"KIM SANG YEOB"},"publisher":{"@type":"Organization","name":"상엽 Blog","logo":{"@type":"ImageObject","url":"http://kimsangyeob.github.io/img/iconmonstr-school-26.svg"}},"description":"모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."}</script><link rel="icon" href="/img/iconmonstr-school-26.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/iconmonstr-school-26.svg" alt="상엽 Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">홈</a><a class="navbar-item" href="/archives">아카이브</a><a class="navbar-item" href="/categories">카테고리</a><a class="navbar-item" href="/tags">태그</a></div><div class="navbar-end"><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-01-10T08:39:15.000Z" title="2022. 1. 10. 오후 5:39:15">2022-01-10</time>&nbsp;게시 됨</span><span class="level-item"><a class="link-muted" href="/categories/network/">network</a></span><span class="level-item">7분안에 읽기 (약 1088 단어)</span></div></div><h1 class="title is-1 is-size-4-mobile"><a class="link-muted" href="/2022/01/10/http-web-basic-2/">http-web-basic-2</a></h1><div class="content"><h1 id="인터넷-네트워크"><a href="#인터넷-네트워크" class="headerlink" title="인터넷 네트워크"></a>인터넷 네트워크</h1><ul>
+<li>TCP</li>
+<li>UDP</li>
 </ul>
-<p>마이크로서비스 아키텍처를 사용하면 크고 복잡한 애플리케이션을 빠르고 자주 안정적으로 전달할 수 있으며, 또한 조직이 기술 스택을 발전시킬 수 있다.</p>
-<p>상황예시)</p>
-<ol>
-<li>서버측 엔터프라이즈 애플리케이션을 개발 중입니다.</li>
-<li>데스크톱 브라우저, 모바일 브라우저 및 기본 모바일 애플리케이션을 비롯한 다양한 클라이언트를 지원해야 합니다.</li>
-<li>애플리케이션은 제3자가 사용할 API를 노출할 수도 있습니다.</li>
-<li>웹 서비스나 메시지 브로커를 통해 다른 애플리케이션과 통합할 수도 있습니다.</li>
-<li>애플리케이션은 비즈니스 로직을 실행하여 요청(HTTP 요청 및 메시지)을 처리합니다.</li>
-<li>데이터베이스 액세스; 다른 시스템과 메시지 교환 HTML/JSON/XML 응답을 반환합니다.</li>
-<li>응용 프로그램의 다양한 기능 영역에 해당하는 논리적 구성 요소가 있습니다.</li>
-</ol>
-<h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><p>애플리케이션의 배포 아키텍처</p>
-<h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul>
-<li>응용 프로그램에서 작업하는 개발자 팀이 있다</li>
-<li>새로운 팀원은 신속하게 생산성을 발휘해야 한다.</li>
-<li>응용 프로그램을 이해하고 수정하기 쉬워야 한다.</li>
-<li>애플리케이션의 지속적인 배포를 연습하고 싶은 경우</li>
-<li>확장성 및 가용성 요구 사항을 충족하려면 여러 컴퓨터에서 애플리케이션의 여러 인스턴스를 실행해야 한다.</li>
-<li>새로운 기술(프레임워크, 프로그래밍 언어 등)을 활용하려는 경우</li>
-</ul>
-<h1 id="해결책"><a href="#해결책" class="headerlink" title="해결책"></a>해결책</h1><p>느슨하게 결합된 협업 서비스 세트로 애플리케이션을 구성하는 아키텍처를 정의한다.</p>
-<ul>
-<li>유지 관리 및 테스트 용이성 - 빠르고 빈번한 개발 및 배포 가능</li>
-<li>다른 서비스와 느슨하게 결합 - 팀이 다른 서비스의 변경 사항에 영향을 받지 않고 다른 서비스에 영향을 주지 않고 대부분의 시간 동안 독립적으로 서비스 작업을 수행할 수 있습니다.</li>
-<li>독립적으로 배포 가능 - 팀이 다른 팀과 협력하지 않고도 서비스를 배포할 수 있습니다.</li>
-<li>소규모 팀으로 개발 가능 - 큰 팀의 높은 커뮤니케이션 헤드를 피하여 높은 생산성에 필수적</li>
-</ul>
-<p>서비스는 HTTP/REST와 같은 동기 프로토콜 또는 AMQP와 같은 비동기 프로토콜을 사용하여 통신합니다.</p>
-<p>서비스는 서로 독립적으로 개발 및 배포할 수 있습니다.</p>
-<p>각 서비스에는 다른 서비스와 분리하기 위해 자체 데이터베이스 가 있습니다.</p>
-<h2 id="결과-컨텍스트"><a href="#결과-컨텍스트" class="headerlink" title="결과 컨텍스트"></a>결과 컨텍스트</h2><p>이 솔루션에는 다음과 같은 많은 이점이 있다.</p>
-<ul>
-<li>크고 복잡한 애플리케이션을 지속적으로 제공하고 배포할 수 있음<ul>
-<li>개선된 유지보수성 - 각 서비스가 상대적으로 작기 때문에 이해하고 변경하기 쉬움</li>
-<li>더 나은 테스트 가능성 - 서비스는 더 작고 테스트하기 더 빠름</li>
-<li>더 나은 배포 가능성 - 서비스를 독립적으로 배포할 수 있음</li>
-<li>이를 통해 여러 자율적인 팀을 중심으로 개발 노력을 구성할 수 있다.<br>각(소위 두 개의 피자) 팀은 하나 이상의 서비스를 소유하고 책임이 있습니다. 각 팀은 다른 모든 팀과 독립적으로 서비스를 개발, 테스트, 배포 및 확장할 수 있습니다.</li>
-</ul>
-</li>
-<li>각 마이크로 서비스는 상대적으로 작습니다.<ul>
-<li>개발자가 이해하기 쉽게</li>
-<li>IDE는 개발자의 생산성을 더 빠르게 만듭니다.</li>
-<li>애플리케이션이 더 빨리 시작되어 개발자의 생산성이 향상되고 배포 속도가 빨라집니다.</li>
-</ul>
-</li>
-<li>향상된 결함 격리. 예를 들어, 한 서비스에 메모리 누수가 있는 경우 해당 서비스만 영향을 받습니다.<br>다른 서비스는 계속해서 요청을 처리합니다. 이에 비해 모놀리식 아키텍처의 오작동 구성 요소 중 하나는 전체 시스템을 다운시킬 수 있습니다.</li>
-<li>기술 스택에 대한 장기적인 약속을 제거합니다. 새로운 서비스를 개발할 때 새로운 기술 스택을 선택할 수 있습니다.</li>
-<li>마찬가지로 기존 서비스를 크게 변경할 때 새로운 기술 스택을 사용하여 다시 작성할 수 있습니다.</li>
-</ul>
-<h2 id="단점"><a href="#단점" class="headerlink" title="단점"></a>단점</h2><p>이 솔루션에는 여러 가지 단점이 있다.</p>
-<ul>
-<li>개발자는 분산 시스템 생성의 추가적인 복잡성을 처리해야 합니다.<ul>
-<li>개발자는 서비스 간 통신 메커니즘을 구현하고 부분적 오류를 처리해야 합니다.</li>
-<li>여러 서비스에 걸친 요청을 구현하는 것이 더 어렵습니다.</li>
-<li>서비스 간의 상호 작용을 테스트하는 것이 더 어렵습니다.</li>
-<li>여러 서비스에 걸친 요청을 구현하려면 팀 간의 세심한 조정이 필요합니다.</li>
-<li>개발자 도구/IDE는 모놀리식 애플리케이션 구축을 지향하며 분산 애플리케이션 개발에 대한 명시적인 지원을 제공하지 않습니다.</li>
-</ul>
-</li>
-<li>배포 복잡성. 프로덕션 환경에는 다양한 서비스로 구성된 시스템을 배포하고 관리하는 작업의 복잡성도 있습니다.</li>
-<li>메모리 소비 증가.</li>
-</ul>
-<blockquote>
-<p>마이크로서비스 아키텍처는 N개의 모놀리식 애플리케이션 인스턴스를 NxM 서비스 인스턴스로 대체한다. 각 서비스가 일반적으로 인스턴스를 격리하는 데 필요한 자체 JVM(또는 이와 동등한 것)에서 실행되는 경우 JVM 런타임의 M배에 달하는 오버헤드가 있습니다. 또한 Netflix의 경우와 같이 각 서비스가 자체 VM(예: EC2 인스턴스)에서 실행되는 경우 오버헤드가 훨씬 더 높다.</p>
-</blockquote>
-<h2 id="Micro-Service-6"><a href="#Micro-Service-6" class="headerlink" title="Micro Service 6"></a>Micro Service 6</h2><h3 id="1-다중-구성-요소"><a href="#1-다중-구성-요소" class="headerlink" title="1. 다중 구성 요소"></a>1. 다중 구성 요소</h3><ul>
-<li>마이크로서비스로 구축된 소프트웨어는 정의에 따라 여러 구성 요소 서비스로 나눌 수 있다.</li>
-<li>따라서 이러한 각 서비스는 애플리케이션의 무결성을 손상시키지 않고 독립적으로 배포, 조정 및 재배포될 수 있다.<br>(결과적으로 전체 응용 프로그램을 다시 배포하는 대신 하나 이상의 고유한 서비스만 변경하면 된다.)</li>
-<li>그러나 이 접근 방식에는 비용이 많이 드는 원격 호출(in-process 호출 대신), 더 세분화된 원격 API, 구성 요소 간 책임 재분배 시 복잡성 증가 등의 단점이 있다.</li>
-</ul>
-<h3 id="2-비즈니스용으로-구축"><a href="#2-비즈니스용으로-구축" class="headerlink" title="2. 비즈니스용으로 구축"></a>2. 비즈니스용으로 구축</h3><ul>
-<li>마이크로서비스 스타일은 일반적으로 비즈니스 기능과 우선 순위를 중심으로 구성된다.</li>
-<li>각기 다른 팀이 UI, 데이터베이스, 기술 계층 또는 서버 측 논리에 대해 특정 초점을 맞추는 기존의 모놀리식 개발 접근 방식과 달리 마이크로서비스 아키텍처는 기능 간 팀을 활용한다.</li>
-<li>각 팀의 책임은 메시지 버스를 통해 통신하는 하나 이상의 개별 서비스를 기반으로 특정 제품을 만드는 것이다.</li>
-</ul>
-<h3 id="3-단순-라우팅"><a href="#3-단순-라우팅" class="headerlink" title="3. 단순 라우팅"></a>3. 단순 라우팅</h3><ul>
-<li>마이크로서비스는 고전적인 UNIX 시스템과 다소 유사하게 작동한다.</li>
-<li>요청을 수신하고 처리하고 그에 따라 응답을 생성한다.</li>
-<li>메시지 라우팅, 구성 및 비즈니스 규칙 적용을 위한 첨단 시스템이 활용되는 ESB(Enterprise Service Buses)와 같은 다른 제품의 수와 반대이다.</li>
-<li>마이크로 서비스에는 정보를 처리하고 논리를 적용하는 스마트 엔드포인트와 정보가 흐르는 덤 파이프가 있다고 말할 수 있다.</li>
-</ul>
-<h3 id="4-탈중앙화"><a href="#4-탈중앙화" class="headerlink" title="4. 탈중앙화"></a>4. 탈중앙화</h3><ul>
-<li>마이크로서비스는 다양한 기술과 플랫폼을 포함하기 때문에 중앙 집중식 거버넌스의 구식 방법은 최적이 아니다.</li>
-<li>마이크로서비스 커뮤니티는 분산 거버넌스를 선호한다.<br>(그 이유는 개발자가 유용한 도구를 생성하여 다른 사람들이 동일한 문제를 해결하는 데 사용할 수 있기 때문이다.)</li>
-<li>분산된 거버넌스와 마찬가지로 마이크로서비스 아키텍처도 분산된 데이터 관리를 선호합니다.<br>(모놀리식 시스템은 여러 애플리케이션에서 단일 논리 데이터베이스를 사용한다.)</li>
-<li>마이크로 서비스 애플리케이션에서 각 서비스는 일반적으로 고유한 데이터베이스를 관리한다.</li>
-</ul>
-<h3 id="5-고장-방지"><a href="#5-고장-방지" class="headerlink" title="5. 고장 방지"></a>5. 고장 방지</h3><ul>
-<li>다재다능한 아이처럼 마이크로서비스는 실패에 대처하도록 설계되었다.</li>
-<li>여러 고유하고 다양한 서비스가 함께 통신하고 있기 때문에 서비스가 실패할 가능성이 있다.<br>(예: 공급자를 사용할 수 없는 경우).</li>
-<li>클라이언트는 가능한 인접 서비스가 작동하도록 허용해야 한다.</li>
-<li>마이크로 서비스를 모니터링 하면 실패 위험을 방지하는 데 도움이 될 수 있다.</li>
-<li>이런 요구 사항은 모놀리식 시스템 아키텍처에 비해 마이크로서비스에 더 많은 복잡성을 추가한다.</li>
-</ul>
-<h3 id="6-진화"><a href="#6-진화" class="headerlink" title="6. 진화"></a>6. 진화</h3><ul>
-<li>마이크로서비스 아키텍처는 혁신적인 설계이며, 언젠가는 애플리케이션에 액세스할 수 있는 장치 유형을 완전히 예측할 수 없는 진화적인 시스템에 이상적이다.</li>
-<li>많은 애플리케이션은 모놀리식 아키텍처를 기반으로 시작하지만 몇 가지 예상치 못한 요구 사항이 표면화됨에 따라, API를 통해 이전 모놀리식 아키텍처와 상호 작용하는 마이크로 서비스로 천천히 개선될 수 있다.</li>
-</ul>
-<h2 id="마이크로-서비스의-찬반"><a href="#마이크로-서비스의-찬반" class="headerlink" title="마이크로 서비스의 찬반"></a>마이크로 서비스의 찬반</h2><p>마이크로서비스는 만병통치약이 아니며, 이를 구현하면 이전에는 암묵적으로 드러났지만 이제는 공개되지 않은 커뮤니케이션, 팀워크 및 기타 문제를 노출할 수 있다.</p>
-<blockquote>
-<p>그러나 마이크로서비스의 API 게이트웨이는 빌드 및 QA 시간과 노력을 크게 줄일 수 있습니다.</p>
+<h2 id="인터넷-프로토콜-스택의-4계층"><a href="#인터넷-프로토콜-스택의-4계층" class="headerlink" title="인터넷 프로토콜 스택의 4계층"></a>인터넷 프로토콜 스택의 4계층</h2><blockquote>
+<p>인터넷에서 컴퓨터들이 서로 정보를 주고받는 데 쓰이는 프로토콜의 모음</p>
 </blockquote>
 <ul>
-<li>한 가지 일반적인 문제는 서비스 간에 스키마/검증 논리를 공유하는 것과 관련된다.</li>
-<li>B가 다른 요구 사항을 가지고 있는 경우 일부 데이터가 유효한 것으로 간주하기 위해 A가 요구하는 것이 항상 B에 적용되는 것은 아니다.</li>
-<li>가장 좋은 권장 사항은 버전 관리를 적용하고 공유 라이브러리에 스키마를 배포하는 것이다.</li>
-<li>라이브러리에 대한 변경 사항은 팀 간의 토론이 될 수 있으며, 또한 강력한 버전 관리에는 종속성이 발생하여 더 많은 오버헤드가 발생할 수 있습니다.</li>
-<li>이를 극복하기 위한 가장 좋은 방법은 이전 버전과의 호환성을 계획하고 외부 서비스/팀의 회귀 테스트 를 수락하는 것일 수 있다.</li>
-<li>이는 다른 사람의 비즈니스 프로세스를 방해한 후에가 아니라 방해 하기 전에 대화를 나누도록 해야한다.</li>
+<li>어플리케이션 계층 : 프로세스간 통신을 담당. 예) HTTP, FTP, TLS/SSL</li>
+<li>전송 계층 : 송신자와 수신자를 연결하는 서비스에 대한 정보를 담당</li>
+<li>인터넷 계층 : 패킷을 목적지로 전송하기 위한 정보를 담당</li>
+<li>네트워크 인터페이스 계층 : LAN드라이버, LAN 장비등을 통해 물리적 전송을 담당</li>
 </ul>
-<blockquote>
-<p>다른 모든 것과 마찬가지로 마이크로 서비스 아키텍처가 각 서비스에 적합한지 여부는 모두 장단점이 있기 때문에 요구 사항에 따라 다를 수 있다.</p>
+<p><img src="/images/http-web-basic/internet-protocol-4.png" alt="internet-protocol-4"></p>
+<h2 id="프로토콜-계층"><a href="#프로토콜-계층" class="headerlink" title="프로토콜 계층"></a>프로토콜 계층</h2><p><img src="/images/http-web-basic/protocol-layer.png" alt="Protocol Layer"></p>
+<h2 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h2><blockquote>
+<p>전송 제어 프로토콜(Transmission Control Protocol)</p>
 </blockquote>
-<h2 id="정리"><a href="#정리" class="headerlink" title="정리"></a>정리</h2><h3 id="장점"><a href="#장점" class="headerlink" title="장점"></a>장점</h3><ul>
-<li>마이크로서비스 아키텍처는 개발자가 서비스를 독립적으로 개발하고 배포할 수 있는 자유를 제공한다.</li>
-<li>마이크로 서비스는 상당히 작은 팀에서 개발할 수 있다.</li>
-<li>다른 서비스에 대한 코드는 다른 언어로 작성할 수 있다.(많은 실무자가 권장하지 않음).</li>
-<li>손쉬운 통합 및 자동 배포(Jenkins, Hudson 등과 같은 오픈 소스 지속적 통합 도구 사용)</li>
-<li>개발자가 쉽게 이해하고 수정할 수 있으므로 새로운 팀원이 신속하게 생산성을 높일 수 있다.</li>
-<li>개발자는 최신 기술을 사용할 수 있다.</li>
-<li>코드는 비즈니스 기능을 중심으로 구성된다.</li>
-<li>웹 컨테이너를 더 빨리 시작하므로 배포도 더 빨라진다.</li>
-<li>애플리케이션의 특정 부분에 변경이 필요한 경우 관련 서비스만 수정하여 재배포할 수 있으며 전체 애플리케이션을 수정하고 재배포할 필요가 없다.</li>
-<li>더 나은 오류 격리: 하나의 마이크로 서비스가 실패해도 다른 하나는 계속 작동한다.<br>(모놀리식 애플리케이션의 문제가 있는 영역 중 하나가 전체 시스템을 위험에 빠뜨릴 수 있음)</li>
-<li>쉽게 확장하고 타사 서비스와 통합</li>
-<li>기술 스택에 대한 장기 약정 없음</li>
+<ul>
+<li>연결지향 - TCP 3 way handshake (가상 연결) 데이터 전달 보증</li>
+<li>순서 보장</li>
+<li>신뢰할 수 있는 프로토콜 현재는 대부분 TCP 사용</li>
 </ul>
-<h3 id="단점-1"><a href="#단점-1" class="headerlink" title="단점"></a>단점</h3><ul>
-<li>분산 배포로 인해 테스트가 복잡하고 지루할 수 있다.</li>
-<li>서비스 수가 증가하면 정보 장벽이 생길 수 있다.</li>
-<li>이 아키텍처는 개발자가 내결함성, 네트워크 지연을 완화하고 다양한 메시지 형식과 로드 밸런싱을 처리해야 하므로 복잡성이 추가로 발생한다.</li>
-<li>분산 시스템이므로 노력이 중복될 수 있습니다.</li>
-<li>서비스의 수가 증가하면 전체 제품의 통합 및 관리가 복잡해질 수 있음</li>
-<li>모놀리식 아키텍처의 여러 복잡성 외에도 개발자는 분산 시스템의 추가적인 복잡성을 처리해야 한다.</li>
-<li>개발자는 서비스 간의 통신 메커니즘을 구현하는 데 추가 노력을 기울여야 한다.</li>
-<li>분산 트랜잭션을 사용하지 않고 둘 이상의 서비스에 걸쳐 있는 사용 사례를 처리하는 것은 어려울 뿐만 아니라 다른 팀 간의 커뮤니케이션과 협력을 요구한다.</li>
+<h3 id="TCP-3-way-handshake"><a href="#TCP-3-way-handshake" class="headerlink" title="TCP 3 way handshake"></a>TCP 3 way handshake</h3><p><img src="/images/http-web-basic/tcp-3-way-handshake.png" alt="Tcp 3 Way Handshake"></p>
+<h3 id="Data-Transfer"><a href="#Data-Transfer" class="headerlink" title="Data Transfer"></a>Data Transfer</h3><p><img src="/images/http-web-basic/tcp-1.png" alt="tcp-1"></p>
+<h3 id="Data-Order"><a href="#Data-Order" class="headerlink" title="Data Order"></a>Data Order</h3><p><img src="/images/http-web-basic/tcp-2.png" alt="tcp-2"></p>
+<h2 id="UDP"><a href="#UDP" class="headerlink" title="UDP"></a>UDP</h2><blockquote>
+<p>사용자 데이터그램 프로토콜(User Datagram Protocol)</p>
+</blockquote>
+<ul>
+<li>하얀 도화지에 비유(기능이 거의 없음)</li>
+<li>연결지향 - TCP 3 way handshake X</li>
+<li>데이터 전달 보증 X</li>
+<li>순서 보장 X</li>
+<li>데이터 전달 및 순서가 보장되지 않지만, 단순하고 빠름</li>
 </ul>
-<h2 id="후기"><a href="#후기" class="headerlink" title="후기"></a>후기</h2><p>현재 아이랩팀은 모놀리식 어플리케이션의 형태로 구성이 되어있다.</p>
-<p>서비스 증가 및 각 업무 도메인을 분산시키기 위해 마이크로 서비스가 필요해질 수 있다.</p>
-<p>미리 많은 사례들과 마이크로 서비스의 기본 설계, 구조, 구축방향 등을 팀내에서 지속적으로 생각해놓고 정리해놓는것 또한 필요한 일이 아닐까 생각이 든다.</p>
+<h3 id="HTTP-3"><a href="#HTTP-3" class="headerlink" title="HTTP/3"></a>HTTP/3</h3><blockquote>
+<p>퀵(QUIC; Quick UDP Internet Connection)로 UDP를 사용하여 인터넷 연결을 하는 프로토콜이다.</p>
+</blockquote>
+<p>HTTP(Hyper Text Transfer Protocol)의 3번째 프로토콜이다. HTTP는 클라이언트와 서버 사이에 이루어지는 요청/응답 프로토콜이다. 클라이언트인 웹 브라우저가 이 프로토콜을 통해 서버로부터 웹 페이지나 그림 정보를 요청하면, 서버는 이 요청에 응답하여 필요한 정보를 해당 사용자에게 전달하게 되고, 이 정보가 출력 장치를 통해 사용자에게 나타나는 것이다. HTTP/3은 처음에는 HTTP-over-QUIC 이라는 이름을 가지고 있었다. 즉, QUIC 프로토콜 위에서 돌아가는 HTTP이다.</p>
+<h2 id="TCP-vs-UDP"><a href="#TCP-vs-UDP" class="headerlink" title="TCP vs UDP"></a>TCP vs UDP</h2><ul>
+<li>TCP는 Connection 지향이며, UDP는 Connectionless 프로토콜이다.</li>
+<li>TCP는 전송 된 정보의 확인을 위해 유용한 데이터를 전송할 때 높은 신뢰성을 제공한다. 그리고 손실 패킷이있는 경우이를 다시 보낸다. UDP의 경우 패킷이 손실되면 재전송을 요구하지 않고 대상 컴퓨터가 손상된 데이터를 수신한다. 따라서 UDP는 신뢰할 수 없는 프로토콜이다.</li>
+<li>TCP는 데이터를 전송하기 전에 TCP가 연결을 설정하고 패킷의 적절한 전달을 보장하므로 UDP와 비교할 때 속도가 느리다. 반면에 UDP는 전송 된 데이터가 수신되었는지 여부를 확인하지 않는다.</li>
+<li>UDP의 헤더 크기는 8 바이트이며 TCP의 헤더 크기는 두 배 이상이다. TCP 헤더 크기는 20 바이트이므로 TCP 헤더에는 옵션, 채우기, 체크섬, 플래그, 데이터 오프셋, 확인 번호, 시퀀스 번호, 원본 및 대상 포트 등이 포함된다.</li>
+<li>TCP와 UDP는 모두 오류를 검사 할 수 있지만 TCP만이 정체와 흐름 제어를 모두 가지고 있으므로 오류를 수정할 수 있다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>비교</th>
+<th>TCP</th>
+<th>UDP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>의미</td>
+<td>TCP는 데이터를 전송하기 전에 컴퓨터간에 연결을 설정합니다.</td>
+<td>UDP는 시스템이 수신 준비가되었는지 여부를 확인하지 않고 대상 컴퓨터에 직접 데이터를 보냅니다.</td>
+</tr>
+<tr>
+<td>확장 대상</td>
+<td>전송 제어 프로토콜</td>
+<td>사용자 데이터 그램 프로토콜</td>
+</tr>
+<tr>
+<td>연결 타입</td>
+<td>연결 지향</td>
+<td>연결이 적음</td>
+</tr>
+<tr>
+<td>속도</td>
+<td>느린</td>
+<td>빠른</td>
+</tr>
+<tr>
+<td>신뢰할 수 있음</td>
+<td>높은 신뢰성</td>
+<td>신뢰할 수 없는</td>
+</tr>
+<tr>
+<td>헤더 크기</td>
+<td>20 바이트</td>
+<td>8 바이트</td>
+</tr>
+<tr>
+<td>승인</td>
+<td>사용자의 요청이있을 경우 데이터 확인 및 전송 재전송 기능이 있습니다.</td>
+<td>수신 확인도 걸리지도 않고 손실 된 데이터를 다시 전송하지도 않습니다.</td>
+</tr>
+</tbody></table>
 <h2 id="참고자료"><a href="#참고자료" class="headerlink" title="참고자료"></a>참고자료</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://smartbear.com/solutions/microservices/">samrtbear microservices</a></li>
+<li><a target="_blank" rel="noopener" href="https://ko.gadget-info.com/difference-between-tcp">gadget-info difference-between-tcp</a></li>
+<li>인프런 강의</li>
 </ul>
-</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/2/">이전</a></div><div class="pagination-next"><a href="/page/4/">다음</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li><li><a class="pagination-link is-current" href="/page/3/">3</a></li><li><a class="pagination-link" href="/page/4/">4</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/12/">12</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="KIM SANG YEOB"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">KIM SANG YEOB</p><p class="is-size-6 is-block">환영합니다.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>서울</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">12</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">14</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/KIMSANGYEOB" target="_blank" rel="noopener">팔로우</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/KIMSANGYEOB"><i class="fab fa-github"></i></a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/blogs/"><span class="level-start"><span class="level-item">blogs</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/git/"><span class="level-start"><span class="level-item">git</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/infra/"><span class="level-start"><span class="level-item">infra</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/javascript/"><span class="level-start"><span class="level-item">javascript</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/network/"><span class="level-start"><span class="level-item">network</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/serverless/"><span class="level-start"><span class="level-item">serverless</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">아카이브</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2022/01/"><span class="level-start"><span class="level-item">1월 2022</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/12/"><span class="level-start"><span class="level-item">12월 2021</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/11/"><span class="level-start"><span class="level-item">11월 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">10월 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/09/"><span class="level-start"><span class="level-item">9월 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/08/"><span class="level-start"><span class="level-item">8월 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">태그</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/aws/"><span class="tag">aws</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/blog/"><span class="tag">blog</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/bundler/"><span class="tag">bundler</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/database/"><span class="tag">database</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/http/"><span class="tag">http</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/infra/"><span class="tag">infra</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/javascript/"><span class="tag">javascript</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/module/"><span class="tag">module</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/network/"><span class="tag">network</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/proxy/"><span class="tag">proxy</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/serverless/"><span class="tag">serverless</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/serverless-stack/"><span class="tag">serverless-stack</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/typescript/"><span class="tag">typescript</span><span class="tag">2</span></a></div></div></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-01-16T13:59:14.000Z">2022-01-16</time></p><p class="title"><a href="/2022/01/16/http-web-basic-3/">http-web-basic-3</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-01-10T08:39:15.000Z">2022-01-10</time></p><p class="title"><a href="/2022/01/10/http-web-basic-2/">http-web-basic-2</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-12-27T14:15:02.000Z">2021-12-27</time></p><p class="title"><a href="/2021/12/27/micro-service/">micro-service</a></p><p class="categories"><a href="/categories/infra/">infra</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-12-21T14:10:32.000Z">2021-12-21</time></p><p class="title"><a href="/2021/12/21/module-bundler/">module-bundler</a></p><p class="categories"><a href="/categories/javascript/">javascript</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-12-13T14:49:16.000Z">2021-12-13</time></p><p class="title"><a href="/2021/12/13/js-proxy/">js-proxy</a></p><p class="categories"><a href="/categories/javascript/">javascript</a></p></div></article></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/iconmonstr-school-26.svg" alt="상엽 Blog" height="28"></a><p class="is-size-7"><span>&copy; 2022 KIM SANG YEOB</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/2/">이전</a></div><div class="pagination-next"><a href="/page/4/">다음</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li><li><a class="pagination-link is-current" href="/page/3/">3</a></li><li><a class="pagination-link" href="/page/4/">4</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/13/">13</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="KIM SANG YEOB"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">KIM SANG YEOB</p><p class="is-size-6 is-block">환영합니다.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>서울</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">13</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">21</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/KIMSANGYEOB" target="_blank" rel="noopener">팔로우</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/KIMSANGYEOB"><i class="fab fa-github"></i></a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/blogs/"><span class="level-start"><span class="level-item">blogs</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/git/"><span class="level-start"><span class="level-item">git</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/infra/"><span class="level-start"><span class="level-item">infra</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/javascript/"><span class="level-start"><span class="level-item">javascript</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/network/"><span class="level-start"><span class="level-item">network</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/serverless/"><span class="level-start"><span class="level-item">serverless</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">아카이브</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2022/01/"><span class="level-start"><span class="level-item">1월 2022</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/12/"><span class="level-start"><span class="level-item">12월 2021</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/11/"><span class="level-start"><span class="level-item">11월 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">10월 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/09/"><span class="level-start"><span class="level-item">9월 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/08/"><span class="level-start"><span class="level-item">8월 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">태그</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/aws/"><span class="tag">aws</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/blog/"><span class="tag">blog</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/bundler/"><span class="tag">bundler</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/database/"><span class="tag">database</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/dns/"><span class="tag">dns</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/http/"><span class="tag">http</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/infra/"><span class="tag">infra</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/internet/"><span class="tag">internet</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/javascript/"><span class="tag">javascript</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/module/"><span class="tag">module</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/network/"><span class="tag">network</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/port/"><span class="tag">port</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/proxy/"><span class="tag">proxy</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/serverless/"><span class="tag">serverless</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/serverless-stack/"><span class="tag">serverless-stack</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/tcp/"><span class="tag">tcp</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/typescript/"><span class="tag">typescript</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/udp/"><span class="tag">udp</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/uri/"><span class="tag">uri</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/url/"><span class="tag">url</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-01-23T13:06:09.000Z">2022-01-23</time></p><p class="title"><a href="/2022/01/23/http-web-basic-4/">http-web-basic-4</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-01-16T13:59:14.000Z">2022-01-16</time></p><p class="title"><a href="/2022/01/16/http-web-basic-3/">http-web-basic-3</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-01-10T08:39:15.000Z">2022-01-10</time></p><p class="title"><a href="/2022/01/10/http-web-basic-2/">http-web-basic-2</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-01-03T08:05:15.000Z">2022-01-03</time></p><p class="title"><a href="/2022/01/03/http-web-basic-1/">http-web-basic-1</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-12-27T14:15:02.000Z">2021-12-27</time></p><p class="title"><a href="/2021/12/27/micro-service/">micro-service</a></p><p class="categories"><a href="/categories/infra/">infra</a></p></div></article></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/iconmonstr-school-26.svg" alt="상엽 Blog" height="28"></a><p class="is-size-7"><span>&copy; 2022 KIM SANG YEOB</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
             article: {
                 highlight: {
                     clipboard: true,
