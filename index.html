@@ -1,207 +1,154 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>상엽 Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="상엽 Blog"><meta name="msapplication-TileImage" content="/img/iconmonstr-school-26.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="상엽 Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."><meta property="og:type" content="blog"><meta property="og:title" content="상엽 Blog"><meta property="og:url" content="http://kimsangyeob.github.io/"><meta property="og:site_name" content="상엽 Blog"><meta property="og:description" content="모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."><meta property="og:locale" content="ko_KR"><meta property="og:image" content="http://kimsangyeob.github.io/img/og_image.png"><meta property="article:author" content="KIM SANG YEOB"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://KIMSANGYEOB.github.io"},"headline":"상엽 Blog","image":["http://kimsangyeob.github.io/img/og_image.png"],"author":{"@type":"Person","name":"KIM SANG YEOB"},"publisher":{"@type":"Organization","name":"상엽 Blog","logo":{"@type":"ImageObject","url":"http://kimsangyeob.github.io/img/iconmonstr-school-26.svg"}},"description":"모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."}</script><link rel="icon" href="/img/iconmonstr-school-26.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><script data-ad-client="ca-pub-3018979069292128" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script><meta name="generator" content="Hexo 5.4.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/iconmonstr-school-26.svg" alt="상엽 Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">홈</a><a class="navbar-item" href="/archives">아카이브</a><a class="navbar-item" href="/categories">카테고리</a><a class="navbar-item" href="/tags">태그</a></div><div class="navbar-end"><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-02-20T13:57:45.000Z" title="2022. 2. 20. 오후 10:57:45">2022-02-20</time>&nbsp;게시 됨</span><span class="level-item"><a class="link-muted" href="/categories/network/">network</a></span><span class="level-item">9분안에 읽기 (약 1359 단어)</span></div></div><h1 class="title is-1 is-size-4-mobile"><a class="link-muted" href="/2022/02/20/http-web-basic-8/">http-web-basic-8</a></h1><div class="content"><h1 id="HTTP-메서드-활용"><a href="#HTTP-메서드-활용" class="headerlink" title="HTTP 메서드 활용"></a>HTTP 메서드 활용</h1><ul>
-<li>클라이언트에서 서버로 데이터 전송</li>
-<li>HTTP API 설계 예시</li>
-</ul>
-<h2 id="클라이언트에서-서버로-데이터-전송"><a href="#클라이언트에서-서버로-데이터-전송" class="headerlink" title="클라이언트에서 서버로 데이터 전송"></a>클라이언트에서 서버로 데이터 전송</h2><p><strong>데이터 전달 방식은 크게 2가지</strong></p>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>상엽 Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="상엽 Blog"><meta name="msapplication-TileImage" content="/img/iconmonstr-school-26.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="상엽 Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."><meta property="og:type" content="blog"><meta property="og:title" content="상엽 Blog"><meta property="og:url" content="http://kimsangyeob.github.io/"><meta property="og:site_name" content="상엽 Blog"><meta property="og:description" content="모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."><meta property="og:locale" content="ko_KR"><meta property="og:image" content="http://kimsangyeob.github.io/img/og_image.png"><meta property="article:author" content="KIM SANG YEOB"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://KIMSANGYEOB.github.io"},"headline":"상엽 Blog","image":["http://kimsangyeob.github.io/img/og_image.png"],"author":{"@type":"Person","name":"KIM SANG YEOB"},"publisher":{"@type":"Organization","name":"상엽 Blog","logo":{"@type":"ImageObject","url":"http://kimsangyeob.github.io/img/iconmonstr-school-26.svg"}},"description":"모든이에게 도움이 될만한 기술 블로그를 운영하고 있습니다."}</script><link rel="icon" href="/img/iconmonstr-school-26.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><script data-ad-client="ca-pub-3018979069292128" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script><meta name="generator" content="Hexo 5.4.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/iconmonstr-school-26.svg" alt="상엽 Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">홈</a><a class="navbar-item" href="/archives">아카이브</a><a class="navbar-item" href="/categories">카테고리</a><a class="navbar-item" href="/tags">태그</a></div><div class="navbar-end"><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-02-21T12:21:52.000Z" title="2022. 2. 21. 오후 9:21:52">2022-02-21</time>&nbsp;게시 됨</span><span class="level-item"><a class="link-muted" href="/categories/network/">network</a></span><span class="level-item">9분안에 읽기 (약 1352 단어)</span></div></div><h1 class="title is-1 is-size-4-mobile"><a class="link-muted" href="/2022/02/21/http-web-basic-9/">http-web-basic-9</a></h1><div class="content"><h1 id="HTTP-상태코드"><a href="#HTTP-상태코드" class="headerlink" title="HTTP 상태코드"></a>HTTP 상태코드</h1><h2 id="상태-코드"><a href="#상태-코드" class="headerlink" title="상태 코드"></a>상태 코드</h2><blockquote>
+<p>클라이언트가 보낸 요청의 처리 상태를 응답에서 알려주는 기능</p>
+</blockquote>
 <ul>
-<li>쿼리 파라미터를 통한 데이터 전송<ul>
-<li>GET</li>
-<li>주로 정렬 필터(검색어)</li>
+<li>1xx (Informational): 요청이 수신되어 처리중</li>
+<li>2xx (Successful): 요청 정상 처리</li>
+<li>3xx (Redirection): 요청을 완료하려면 추가 행동이 필요</li>
+<li>4xx (Client Error): 클라이언트 오류, 잘못된 문법등으로 서버가 요청을 수행할 수 없음</li>
+<li>5xx (Server Error): 서버 오류, 서버가 정상 요청을 처리하지 못함</li>
 </ul>
-</li>
-<li>메시지 바디를 통한 데이터 전송<ul>
-<li>POST, PUT, PATCH</li>
-<li>회원 가입, 상품 주문, 리소스 등록, 리소스 변경</li>
-</ul>
-</li>
-</ul>
-<h2 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h2><ul>
-<li>정적 데이터 조회<ul>
-<li>이미지, 정적 텍스트 문서</li>
-</ul>
-</li>
-<li>동적 데이터 조회<ul>
-<li>주로 검색, 게시판 목록에서 정렬 필터(검색어)</li>
-</ul>
-</li>
-<li>HTML Form을 통한 데이터 전송<ul>
-<li>회원 가입, 상품 주문, 데이터 변경</li>
-</ul>
-</li>
-<li>HTTP API를 통한 데이터 전송<ul>
-<li>회원 가입, 상품 주문, 데이터 변경</li>
-<li>서버 to 서버, 앱 클라이언트, 웹 클라이언트(Ajax)</li>
+<h2 id="만약-모르는-상태-코드가-나타나면"><a href="#만약-모르는-상태-코드가-나타나면" class="headerlink" title="만약 모르는 상태 코드가 나타나면?"></a>만약 모르는 상태 코드가 나타나면?</h2><ul>
+<li>클라이언트가 인식할 수 없는 상태코드를 서버가 반환하면?</li>
+<li>클라이언트는 상위 상태코드로 해석해서 처리</li>
+<li>미래에 새로운 상태 코드가 추가되어도 클라이언트를 변경하지 않아도 됨</li>
+<li>예)<ul>
+<li>299 ??? -&gt; 2xx (Successful)</li>
+<li>451 ??? -&gt; 4xx (Client Error)</li>
+<li>599 ??? -&gt; 5xx (Server Error)</li>
 </ul>
 </li>
 </ul>
-<h2 id="정적-데이터-조회"><a href="#정적-데이터-조회" class="headerlink" title="정적 데이터 조회"></a>정적 데이터 조회</h2><ul>
-<li>이미지, 정적 텍스트 문서</li>
-<li>조회는 GET 사용</li>
-<li>정적 데이터는 일반적으로 쿼리 파라미터 없이 리소스 경로로 단순하게 조회 가능</li>
-</ul>
-<h2 id="동적-데이터-조회"><a href="#동적-데이터-조회" class="headerlink" title="동적 데이터 조회"></a>동적 데이터 조회</h2><ul>
-<li>주로 검색, 게시판 목록에서 정렬 필터(검색어)</li>
-<li>조회 조건을 줄여주는 필터, 조회 결과를 정렬하는 정렬 조건에 주로 사용</li>
-<li>조회는 GET 사용</li>
-<li>GET은 쿼리 파라미터 사용해서 데이터를 전달</li>
-</ul>
-<h2 id="HTML-Form-데이터-전송"><a href="#HTML-Form-데이터-전송" class="headerlink" title="HTML Form 데이터 전송"></a>HTML Form 데이터 전송</h2><p><img src="/images/http-web-basic/http-form-multipart.png" alt="http-form-multipart"></p>
+<h2 id="1xx-Informational"><a href="#1xx-Informational" class="headerlink" title="1xx (Informational)"></a>1xx (Informational)</h2><blockquote>
+<p>요청이 수신되어 처리중</p>
+</blockquote>
 <ul>
-<li>HTML Form submit시 POST 전송<ul>
-<li>예) 회원 가입, 상품 주문, 데이터 변경</li>
+<li>거의 사용하지 않으므로 생략</li>
+</ul>
+<h2 id="2xx-Successful"><a href="#2xx-Successful" class="headerlink" title="2xx (Successful)"></a>2xx (Successful)</h2><blockquote>
+<p>클라이언트의 요청을 성공적으로 처리</p>
+</blockquote>
+<ul>
+<li>200 OK</li>
+<li>201 Created</li>
+<li>202 Accepted</li>
+<li>204 No Content</li>
+</ul>
+<p><img src="/images/http-web-basic/http-code-201.png" alt="http-code-201"></p>
+<h3 id="202-Accepted"><a href="#202-Accepted" class="headerlink" title="202 Accepted"></a>202 Accepted</h3><p><strong>요청이 접수되었으나 처리가 완료되지 않았음</strong></p>
+<ul>
+<li>배치 처리 같은 곳에서 사용</li>
+<li>예) 요청 접수 후 1시간 뒤에 배치 프로세스가 요청을 처리함</li>
+</ul>
+<h3 id="204-No-Content"><a href="#204-No-Content" class="headerlink" title="204 No Content"></a>204 No Content</h3><p><strong>서버가 요청을 성공적으로 수행했지만, 응답 페이로드 본문에 보낼 데이터가 없음</strong></p>
+<ul>
+<li>예) 웹 문서 편집기에서 save 버튼</li>
+<li>save 버튼의 결과로 아무 내용이 없어도 된다.</li>
+<li>save 버튼을 눌러도 같은 화면을 유지해야 한다.</li>
+<li>결과 내용이 없어도 204 메시지(2xx)만으로 성공을 인식할 수 있다.</li>
+</ul>
+<h2 id="3xx-Redirection"><a href="#3xx-Redirection" class="headerlink" title="3xx (Redirection)"></a>3xx (Redirection)</h2><p><strong>요청을 완료하기 위해 유저 에이전트의 추가 조치 필요</strong></p>
+<ul>
+<li>300 Multiple Choices</li>
+<li>301 Moved Permanently</li>
+<li>302 Found</li>
+<li>303 See Other</li>
+<li>304 Not Modified</li>
+<li>307 Temporary Redirect</li>
+<li>308 Permanent Redirect</li>
+</ul>
+<h3 id="리다이렉션-이해"><a href="#리다이렉션-이해" class="headerlink" title="리다이렉션 이해"></a>리다이렉션 이해</h3><ul>
+<li>웹 브라우저는 3xx 응답의 결과에 Location 헤더가 있으면, Location 위치로 자동 이동<br>(리다이렉트)</li>
+</ul>
+<h3 id="종류"><a href="#종류" class="headerlink" title="종류"></a>종류</h3><ul>
+<li>영구 리다이렉션 - 특정 리소스의 URI가 영구적으로 이동<ul>
+<li>예) /members -&gt; /users</li>
+<li>예) /event -&gt; /new-event</li>
 </ul>
 </li>
-<li>Content-Type: application/x-www-form-urlencoded 사용<ul>
-<li>form의 내용을 메시지 바디를 통해서 전송(key=value, 쿼리 파라미터 형식)</li>
-<li>전송 데이터를 url encoding 처리<ul>
-<li>예) abc김 -&gt; abc%EA%B9%80</li>
+<li>일시 리다이렉션 - 일시적인 변경<ul>
+<li>주문 완료 후 주문 내역 화면으로 이동</li>
+<li>PRG: Post/Redirect/Get</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>HTML Form은 GET 전송도 가능</li>
-<li>Content-Type: multipart/form-data<ul>
-<li>파일 업로드 같은 바이너리 데이터 전송시 사용</li>
-<li>다른 종류의 여러 파일과 폼의 내용 함께 전송 가능(그래서 이름이 multipart)</li>
-</ul>
-</li>
-<li>참고: HTML Form 전송은 GET, POST만 지원</li>
-</ul>
-<h2 id="HTTP-API-데이터-전송"><a href="#HTTP-API-데이터-전송" class="headerlink" title="HTTP API 데이터 전송"></a>HTTP API 데이터 전송</h2><ul>
-<li>서버 to 서버</li>
-<li>백엔드 시스템 통신</li>
-<li>앱 클라이언트</li>
-<li>아이폰, 안드로이드</li>
-<li>웹 클라이언트</li>
-<li>HTML에서 Form 전송 대신 자바 스크립트를 통한 통신에 사용(AJAX)</li>
-<li>예) React, VueJs 같은 웹 클라이언트와 API 통신</li>
-<li>POST, PUT, PATCH: 메시지 바디를 통해 데이터 전송</li>
-<li>GET: 조회, 쿼리 파라미터로 데이터 전달</li>
-<li>Content-Type: application/json을 주로 사용 (사실상 표준)</li>
-<li>TEXT, XML, JSON 등등</li>
-</ul>
-<h1 id="HTTP-API-설계-예시"><a href="#HTTP-API-설계-예시" class="headerlink" title="HTTP API 설계 예시"></a>HTTP API 설계 예시</h1><ul>
-<li>HTTP API - 컬렉션<ul>
-<li>POST 기반 등록</li>
-<li>예) 회원 관리 API 제공</li>
-</ul>
-</li>
-<li>HTTP API - 스토어<ul>
-<li>PUT 기반 등록</li>
-<li>예) 정적 컨텐츠 관리, 원격 파일 관리</li>
-</ul>
-</li>
-<li>HTML FORM 사용<ul>
-<li>웹 페이지 회원 관리</li>
-<li>GET, POST만 지원</li>
-</ul>
-</li>
-</ul>
-<h1 id="회원-관리-시스템"><a href="#회원-관리-시스템" class="headerlink" title="회원 관리 시스템"></a>회원 관리 시스템</h1><h2 id="API-설계-POST-기반-등록"><a href="#API-설계-POST-기반-등록" class="headerlink" title="API 설계 - POST 기반 등록"></a>API 설계 - POST 기반 등록</h2><ul>
-<li>회원 목록 /members -&gt; GET</li>
-<li>회원 등록 /members -&gt; POST</li>
-<li>회원 조회 /members/{id} -&gt; GET</li>
-<li>회원 수정 /members/{id} -&gt; PATCH, PUT, POST</li>
-<li>회원 삭제 /members/{id} -&gt; DELETE</li>
-</ul>
-<h2 id="POST-신규-자원-등록-특징"><a href="#POST-신규-자원-등록-특징" class="headerlink" title="POST - 신규 자원 등록 특징"></a>POST - 신규 자원 등록 특징</h2><ul>
-<li>클라이언트는 등록될 리소스의 URI를 모른다.<ul>
-<li>회원 등록 /members -&gt; POST</li>
-<li>POST /members</li>
-</ul>
-</li>
-<li>서버가 새로 등록된 리소스 URI를 생성해준다.<ul>
-<li>HTTP/1.1 201 Created<br>Location: <code>/members/100</code></li>
-</ul>
-</li>
-<li>컬렉션(Collection)<ul>
-<li>서버가 관리하는 리소스 디렉토리</li>
-<li>서버가 리소스의 URI를 생성하고 관리</li>
-<li>여기서 컬렉션은 /members</li>
+<li>특수 리다이렉션<ul>
+<li>결과 대신 캐시를 사용</li>
 </ul>
 </li>
 </ul>
-<h1 id="파일-관리-시스템"><a href="#파일-관리-시스템" class="headerlink" title="파일 관리 시스템"></a>파일 관리 시스템</h1><h2 id="API-설계-PUT-기반-등록"><a href="#API-설계-PUT-기반-등록" class="headerlink" title="API 설계 - PUT 기반 등록"></a>API 설계 - PUT 기반 등록</h2><ul>
-<li>파일 목록 /files -&gt; GET</li>
-<li>파일 조회 /files/{filename} -&gt; GET</li>
-<li>파일 등록 /files/{filename} -&gt; PUT</li>
-<li>파일 삭제 /files/{filename} -&gt; DELETE</li>
-<li>파일 대량 등록 /files -&gt; POST</li>
-</ul>
-<h2 id="PUT-신규-자원-등록-특징"><a href="#PUT-신규-자원-등록-특징" class="headerlink" title="PUT - 신규 자원 등록 특징"></a>PUT - 신규 자원 등록 특징</h2><ul>
-<li>클라이언트가 리소스 URI를 알고 있어야 한다.<ul>
-<li>파일 등록 /files/{filename} -&gt; PUT</li>
-<li>PUT /files/star.jpg</li>
+<blockquote>
+<p>그래서 뭘 써야 하나요?</p>
+</blockquote>
+<p>302, 307, 303?</p>
+<ul>
+<li>잠깐 정리<ul>
+<li>302 Found -&gt; GET으로 변할 수 있음</li>
+<li>307 Temporary Redirect -&gt; 메서드가 변하면 안됨</li>
+<li>303 See Other -&gt; 메서드가 GET으로 변경</li>
 </ul>
 </li>
-<li>클라이언트가 직접 리소스의 URI를 지정한다.</li>
-<li>스토어(Store)<ul>
-<li>클라이언트가 관리하는 리소스 저장소</li>
-<li>클라이언트가 리소스의 URI를 알고 관리</li>
-<li>여기서 스토어는 /files</li>
+<li>역사<ul>
+<li>처음 302 스펙의 의도는 HTTP 메서드를 유지하는 것</li>
+<li>그런데 웹 브라우저들이 대부분 GET으로 바꾸어버림(일부는 다르게 동작)</li>
+<li>그래서 모호한 302를 대신하는 명확한 307, 303이 등장함(301 대응으로 308도 등장)</li>
 </ul>
 </li>
-</ul>
-<h1 id="HTML-FORM-사용"><a href="#HTML-FORM-사용" class="headerlink" title="HTML FORM 사용"></a>HTML FORM 사용</h1><ul>
-<li>HTML FORM은 GET, POST만 지원</li>
-<li>AJAX 같은 기술을 사용해서 해결 가능 -&gt; 회원 API 참고</li>
-<li>여기서는 순수 HTML, HTML FORM 이야기</li>
-<li>GET, POST만 지원하므로 제약이 있음</li>
-</ul>
-<h2 id="제약사항"><a href="#제약사항" class="headerlink" title="제약사항"></a>제약사항</h2><ul>
-<li>HTML FORM은 GET, POST만 지원</li>
-<li>컨트롤 URI<ul>
-<li>GET, POST만 지원하므로 제약이 있음</li>
-<li>이런 제약을 해결하기 위해 동사로 된 리소스 경로 사용</li>
-<li>POST의 /new, /edit, /delete가 컨트롤 URI</li>
-<li>HTTP 메서드로 해결하기 애매한 경우 사용(HTTP API 포함)</li>
+<li>현실<ul>
+<li>307, 303을 권장하지만 현실적으로 이미 많은 애플리케이션 라이브러리들이 302를 기본값으로 사용</li>
+<li>자동 리다이렉션시에 GET으로 변해도 되면 그냥 302를 사용해도 큰 문제 없음</li>
 </ul>
 </li>
 </ul>
-<h1 id="정리"><a href="#정리" class="headerlink" title="정리"></a>정리</h1><ul>
-<li>HTTP API - 컬렉션<ul>
-<li>POST 기반 등록</li>
-<li>서버가 리소스 URI 결정</li>
+<h2 id="4xx-Client-Error"><a href="#4xx-Client-Error" class="headerlink" title="4xx (Client Error)"></a>4xx (Client Error)</h2><p><strong>클라이언트 오류</strong></p>
+<ul>
+<li>클라이언트의 요청에 잘못된 문법등으로 서버가 요청을 수행할 수 없음</li>
+<li>오류의 원인이 클라이언트에 있음</li>
+<li>중요! 클라이언트가 이미 잘못된 요청, 데이터를 보내고 있기 때문에, 똑같은 재시도가 실패함</li>
 </ul>
-</li>
-<li>HTTP API - 스토어<ul>
-<li>PUT 기반 등록</li>
-<li>클라이언트가 리소스 URI 결정</li>
+<h3 id="400-Bad-Request"><a href="#400-Bad-Request" class="headerlink" title="400 Bad Request"></a>400 Bad Request</h3><p><strong>클라이언트가 잘못된 요청을 해서 서버가 요청을 처리할 수 없음</strong></p>
+<ul>
+<li>요청 구문, 메시지 등등 오류</li>
+<li>클라이언트는 요청 내용을 다시 검토하고, 보내야함</li>
+<li>예) 요청 파라미터가 잘못되거나, API 스펙이 맞지 않을 때</li>
 </ul>
-</li>
-<li>HTML FORM 사용<ul>
-<li>순수 HTML + HTML form 사용</li>
-<li>GET, POST만 지원</li>
-</ul>
-</li>
-</ul>
-<h2 id="참고하면-좋은-URI-설계-개념"><a href="#참고하면-좋은-URI-설계-개념" class="headerlink" title="참고하면 좋은 URI 설계 개념"></a>참고하면 좋은 URI 설계 개념</h2><ul>
-<li>문서(document)<ul>
-<li>단일 개념(파일 하나, 객체 인스턴스, 데이터베이스 row)</li>
-<li>예) /members/100, /files/star.jpg</li>
-</ul>
-</li>
-<li>컬렉션(collection)<ul>
-<li>서버가 관리하는 리소스 디렉터리</li>
-<li>서버가 리소스의 URI를 생성하고 관리</li>
-<li>예) /members</li>
-</ul>
-</li>
-<li>스토어(store)<ul>
-<li>클라이언트가 관리하는 자원 저장소</li>
-<li>클라이언트가 리소스의 URI를 알고 관리</li>
-<li>예) /files</li>
-</ul>
-</li>
-<li>컨트롤러(controller), 컨트롤 URI<ul>
-<li>문서, 컬렉션, 스토어로 해결하기 어려운 추가 프로세스 실행</li>
-<li>동사를 직접 사용</li>
-<li>예) /members/{id}/delete</li>
+<h3 id="401-Unauthorized"><a href="#401-Unauthorized" class="headerlink" title="401 Unauthorized"></a>401 Unauthorized</h3><p><strong>클라이언트가 해당 리소스에 대한 인증이 필요함</strong></p>
+<ul>
+<li>인증(Authentication) 되지 않음</li>
+<li>401 오류 발생시 응답에 WWW-Authenticate 헤더와 함께 인증 방법을 설명</li>
+<li>참고<ul>
+<li>인증(Authentication): 본인이 누구인지 확인, (로그인)</li>
+<li>인가(Authorization): 권한부여 (ADMIN 권한처럼 특정 리소스에 접근할 수 있는 권한, 인증이 있어야 인가가 있음)</li>
+<li>오류 메시지가 Unauthorized 이지만 인증 되지 않음 (이름이 아쉬움)</li>
 </ul>
 </li>
 </ul>
-</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous is-invisible is-hidden-mobile"><a href="/page/0/">이전</a></div><div class="pagination-next"><a href="/page/2/">다음</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link is-current" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/17/">17</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="KIM SANG YEOB"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">KIM SANG YEOB</p><p class="is-size-6 is-block">환영합니다.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>서울</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">17</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">23</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/KIMSANGYEOB" target="_blank" rel="noopener">팔로우</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/KIMSANGYEOB"><i class="fab fa-github"></i></a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/blogs/"><span class="level-start"><span class="level-item">blogs</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/git/"><span class="level-start"><span class="level-item">git</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/infra/"><span class="level-start"><span class="level-item">infra</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/javascript/"><span class="level-start"><span class="level-item">javascript</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/network/"><span class="level-start"><span class="level-item">network</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/serverless/"><span class="level-start"><span class="level-item">serverless</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">아카이브</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2022/02/"><span class="level-start"><span class="level-item">2월 2022</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2022/01/"><span class="level-start"><span class="level-item">1월 2022</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/12/"><span class="level-start"><span class="level-item">12월 2021</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/11/"><span class="level-start"><span class="level-item">11월 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">10월 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/09/"><span class="level-start"><span class="level-item">9월 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/08/"><span class="level-start"><span class="level-item">8월 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">태그</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/aws/"><span class="tag">aws</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/blog/"><span class="tag">blog</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/bundler/"><span class="tag">bundler</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/database/"><span class="tag">database</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/dns/"><span class="tag">dns</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/http/"><span class="tag">http</span><span class="tag">8</span></a></div><div class="control"><a class="tags has-addons" href="/tags/infra/"><span class="tag">infra</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/internet/"><span class="tag">internet</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/javascript/"><span class="tag">javascript</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/module/"><span class="tag">module</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/network/"><span class="tag">network</span><span class="tag">8</span></a></div><div class="control"><a class="tags has-addons" href="/tags/port/"><span class="tag">port</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/proxy/"><span class="tag">proxy</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/rest-api/"><span class="tag">rest api</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/server/"><span class="tag">server</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/serverless/"><span class="tag">serverless</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/serverless-stack/"><span class="tag">serverless-stack</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/tcp/"><span class="tag">tcp</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/typescript/"><span class="tag">typescript</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/udp/"><span class="tag">udp</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/uri/"><span class="tag">uri</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/url/"><span class="tag">url</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="adsense"><div class="card-content"><div class="menu"><h3 class="menu-label">광고</h3><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3018979069292128" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-02-20T13:57:45.000Z">2022-02-20</time></p><p class="title"><a href="/2022/02/20/http-web-basic-8/">http-web-basic-8</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-02-13T10:27:46.000Z">2022-02-13</time></p><p class="title"><a href="/2022/02/13/http-web-basic-7/">http-web-basic-7</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-02-06T13:53:48.000Z">2022-02-06</time></p><p class="title"><a href="/2022/02/06/http-web-basic-6/">http-web-basic-6</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-01-30T13:53:48.000Z">2022-01-30</time></p><p class="title"><a href="/2022/01/30/http-web-basic-5/">http-web-basic-5</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-01-23T13:06:09.000Z">2022-01-23</time></p><p class="title"><a href="/2022/01/23/http-web-basic-4/">http-web-basic-4</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/iconmonstr-school-26.svg" alt="상엽 Blog" height="28"></a><p class="is-size-7"><span>&copy; 2022 KIM SANG YEOB</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+<h3 id="403-Forbidden"><a href="#403-Forbidden" class="headerlink" title="403 Forbidden"></a>403 Forbidden</h3><p><strong>서버가 요청을 이해했지만 승인을 거부함</strong></p>
+<ul>
+<li>주로 인증 자격 증명은 있지만, 접근 권한이 불충분한 경우</li>
+<li>예) 어드민 등급이 아닌 사용자가 로그인은 했지만, 어드민 등급의 리소스에 접근하는 경우</li>
+</ul>
+<h3 id="404-Not-Found"><a href="#404-Not-Found" class="headerlink" title="404 Not Found"></a>404 Not Found</h3><p><strong>요청 리소스를 찾을 수 없음</strong></p>
+<ul>
+<li>요청 리소스가 서버에 없음</li>
+<li>또는 클라이언트가 권한이 부족한 리소스에 접근할 때 해당 리소스를 숨기고 싶을 때</li>
+</ul>
+<h2 id="5xx-Server-Error"><a href="#5xx-Server-Error" class="headerlink" title="5xx (Server Error)"></a>5xx (Server Error)</h2><p><strong>서버 오류</strong></p>
+<ul>
+<li>서버 문제로 오류 발생</li>
+<li>서버에 문제가 있기 때문에 재시도 하면 성공할 수도 있음(복구가 되거나 등등)</li>
+</ul>
+<h3 id="500-Internal-Server-Error"><a href="#500-Internal-Server-Error" class="headerlink" title="500 Internal Server Error"></a>500 Internal Server Error</h3><p><strong>서버 문제로 오류 발생, 애매하면 500 오류</strong></p>
+<ul>
+<li>서버 내부 문제로 오류 발생</li>
+<li>애매하면 500 오류</li>
+</ul>
+<h3 id="503-Service-Unavailable"><a href="#503-Service-Unavailable" class="headerlink" title="503 Service Unavailable"></a>503 Service Unavailable</h3><p><strong>서비스 이용 불가</strong></p>
+<ul>
+<li>서버가 일시적인 과부하 또는 예정된 작업으로 잠시 요청을 처리할 수 없음</li>
+<li>Retry-After 헤더 필드로 얼마뒤에 복구되는지 보낼 수도 있음</li>
+</ul>
+</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous is-invisible is-hidden-mobile"><a href="/page/0/">이전</a></div><div class="pagination-next"><a href="/page/2/">다음</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link is-current" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/18/">18</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="KIM SANG YEOB"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">KIM SANG YEOB</p><p class="is-size-6 is-block">환영합니다.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>서울</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">18</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">24</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/KIMSANGYEOB" target="_blank" rel="noopener">팔로우</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/KIMSANGYEOB"><i class="fab fa-github"></i></a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/blogs/"><span class="level-start"><span class="level-item">blogs</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/git/"><span class="level-start"><span class="level-item">git</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/infra/"><span class="level-start"><span class="level-item">infra</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/javascript/"><span class="level-start"><span class="level-item">javascript</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/network/"><span class="level-start"><span class="level-item">network</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/categories/serverless/"><span class="level-start"><span class="level-item">serverless</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">아카이브</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2022/02/"><span class="level-start"><span class="level-item">2월 2022</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2022/01/"><span class="level-start"><span class="level-item">1월 2022</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/12/"><span class="level-start"><span class="level-item">12월 2021</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/11/"><span class="level-start"><span class="level-item">11월 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">10월 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/09/"><span class="level-start"><span class="level-item">9월 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/08/"><span class="level-start"><span class="level-item">8월 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">태그</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/aws/"><span class="tag">aws</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/blog/"><span class="tag">blog</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/bundler/"><span class="tag">bundler</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/database/"><span class="tag">database</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/dns/"><span class="tag">dns</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/http/"><span class="tag">http</span><span class="tag">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/infra/"><span class="tag">infra</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/internet/"><span class="tag">internet</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/javascript/"><span class="tag">javascript</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/module/"><span class="tag">module</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/network/"><span class="tag">network</span><span class="tag">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/port/"><span class="tag">port</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/proxy/"><span class="tag">proxy</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/rest-api/"><span class="tag">rest api</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/server/"><span class="tag">server</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/serverless/"><span class="tag">serverless</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/serverless-stack/"><span class="tag">serverless-stack</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/status-code/"><span class="tag">status code</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/tcp/"><span class="tag">tcp</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/typescript/"><span class="tag">typescript</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/udp/"><span class="tag">udp</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/uri/"><span class="tag">uri</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/url/"><span class="tag">url</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="adsense"><div class="card-content"><div class="menu"><h3 class="menu-label">광고</h3><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3018979069292128" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-02-21T12:21:52.000Z">2022-02-21</time></p><p class="title"><a href="/2022/02/21/http-web-basic-9/">http-web-basic-9</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-02-20T13:57:45.000Z">2022-02-20</time></p><p class="title"><a href="/2022/02/20/http-web-basic-8/">http-web-basic-8</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-02-13T10:27:46.000Z">2022-02-13</time></p><p class="title"><a href="/2022/02/13/http-web-basic-7/">http-web-basic-7</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-02-06T13:53:48.000Z">2022-02-06</time></p><p class="title"><a href="/2022/02/06/http-web-basic-6/">http-web-basic-6</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-01-30T13:53:48.000Z">2022-01-30</time></p><p class="title"><a href="/2022/01/30/http-web-basic-5/">http-web-basic-5</a></p><p class="categories"><a href="/categories/network/">network</a></p></div></article></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/iconmonstr-school-26.svg" alt="상엽 Blog" height="28"></a><p class="is-size-7"><span>&copy; 2022 KIM SANG YEOB</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
             article: {
                 highlight: {
                     clipboard: true,
